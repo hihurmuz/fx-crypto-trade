@@ -11,8 +11,8 @@
 				<v-icon>mdi-account</v-icon>
 			</v-btn>
 
-			<v-btn text rounded>
-				<v-icon>mdi-moon-waning-crescent</v-icon>
+			<v-btn text rounded @click="darkMode">
+				<v-icon>{{iconDarkModeType}}</v-icon>
 			</v-btn>
 			<v-menu offset-y>
 				<template v-slot:activator="{ on, attrs }">
@@ -76,7 +76,7 @@
 	</div>
 </template>
 
-<script> //  moon-full
+<script>
 export default {
 	name: "TheMenu",
 	data() {
@@ -87,7 +87,7 @@ export default {
 				{
 					icon: 'mdi-apps',
 					title: 'Panel',
-					to: '/'
+					to: '/home'
 				},
 				{
 					icon: 'mdi-apps',
@@ -140,6 +140,16 @@ export default {
 					text: 'İngilizce'
 				}
 			]
+		}
+	},
+	computed:{
+		iconDarkModeType() {
+			return this.$vuetify.theme.dark ? 'mdi-white-balance-sunny' : 'mdi-moon-waning-crescent'
+		}
+	},
+	methods: {
+		darkMode() {
+			this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
 		}
 	}
 }
