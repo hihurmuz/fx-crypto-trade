@@ -1,7 +1,12 @@
 <template>
-	<div class="d-flex flex-wrap"
-		 color="grey lighten-2">
-		<info-card class="ma-4" v-for="(el,i) in infoCardData" :key="i" :info="el"/>
+	<div>
+		<div
+			class="d-flex flex-wrap"
+			color="grey lighten-2"
+		>
+			<info-card class="ma-4" v-for="(el,i) in infoCardData" :key="i" :info="el"/>
+		</div>
+		<dashboard-analytics />
 	</div>
 </template>
 
@@ -10,7 +15,7 @@ export default {
 	name: 'Home',
 	data() {
 		return {
-			infoCardData:[
+			infoCardData: [
 				{
 					title: "My Exchange",
 					content: "Connect an exchange using API Key or manage\n" +

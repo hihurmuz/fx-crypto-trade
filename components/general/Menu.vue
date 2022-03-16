@@ -30,7 +30,8 @@
 						v-for="(item, index) in language"
 						:key="index"
 					>
-						<v-list-item-title>{{ item.text }}</v-list-item-title>
+						<v-img :src="item.url" width="40" />
+						<v-list-item-title class="ml-2">{{ item.text }}</v-list-item-title>
 					</v-list-item>
 				</v-list>
 			</v-menu>
@@ -47,10 +48,10 @@
 				<v-list-item link>
 					<v-list-item-content>
 						<v-list-item-title class="text-h6">
-							Sandra Adams
+							Ali Yılmaz
 						</v-list-item-title>
 						<v-list-item-subtitle>
-							sandra_a88@gmail.com
+							aliyilmaz@gmail.com
 						</v-list-item-subtitle>
 					</v-list-item-content>
 				</v-list-item>
@@ -85,47 +86,47 @@ export default {
 			clipped: false,
 			items: [
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-speedometer',
 					title: 'Panel',
 					to: '/home'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-view-stream-outline',
 					title: 'Pozizyonlar',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-television',
 					title: 'Terminal',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-robot-excited-outline',
 					title: 'Botlar',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-credit-card-outline',
 					title: 'Faturalandırma',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-account-circle-outline',
 					title: 'Profil',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-swap-horizontal',
 					title: 'İşlemlerim',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-shield-account-outline',
 					title: 'Güvenlik',
 					to: '/'
 				},
 				{
-					icon: 'mdi-apps',
+					icon: 'mdi-bell-outline',
 					title: 'Bildirimler',
 					to: '/'
 				},
@@ -133,11 +134,13 @@ export default {
 			language: [
 				{
 					symbol: 'tr',
-					text: 'Türkçe'
+					text: 'Türkçe',
+					url: 'https://countryflagsapi.com/svg/tr'
 				},
 				{
 					symbol: 'en',
-					text: 'İngilizce'
+					text: 'English',
+					url: 'https://countryflagsapi.com/svg/us'
 				}
 			]
 		}
