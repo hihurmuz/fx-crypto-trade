@@ -43,7 +43,7 @@
 				color="primary"
 				block
 				:disabled="btnStatus"
-				@click="$router.push('/home')"
+				@click="goDashboard"
 			>
 				Giriş
 			</v-btn>
@@ -98,6 +98,12 @@ export default {
 			show1: true,
 			btnStatus: false,
 			registerDialog: false
+		}
+	},
+	methods: {
+		goDashboard() {
+			if (this.userEmail === 'test' && (this.password === 'test')) this.$router.push('/home')
+
 		}
 	}
 }
