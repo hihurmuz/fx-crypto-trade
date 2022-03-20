@@ -6,13 +6,15 @@
 		>
 			<info-card class="ma-4" v-for="(el,i) in infoCardData" :key="i" :info="el"/>
 		</div>
-		<dashboard-analytics />
+		<Analytics />
 	</div>
 </template>
 
 <script>
+import Analytics from "@/components/dashboard/Analytics";
 export default {
 	name: 'Home',
+	components: {Analytics},
 	data() {
 		return {
 			infoCardData: [

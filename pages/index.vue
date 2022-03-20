@@ -1,12 +1,14 @@
 <template>
 	<v-row justify="center" align="center">
 		<v-col cols="12" sm="12" md="12">
-			<general-the-login-card/>
+			<TheLoginCard />
 		</v-col>
 	</v-row>
 </template>
 <script>
+import TheLoginCard from "@/components/general/TheLoginCard";
 export default {
+	components: {TheLoginCard},
 	layout: 'login'
 
 }

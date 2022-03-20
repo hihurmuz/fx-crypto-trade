@@ -93,17 +93,17 @@ export default {
 				{
 					icon: 'mdi-view-stream-outline',
 					title: 'Pozizyonlar',
-					to: '/'
+					to: '/positions'
 				},
 				{
 					icon: 'mdi-television',
 					title: 'Terminal',
-					to: '/'
+					to: '/terminal'
 				},
 				{
 					icon: 'mdi-robot-excited-outline',
 					title: 'Botlar',
-					to: '/'
+					to: '/bots'
 				},
 				{
 					icon: 'mdi-credit-card-outline',
