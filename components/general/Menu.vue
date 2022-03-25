@@ -108,27 +108,27 @@ export default {
 				{
 					icon: 'mdi-credit-card-outline',
 					title: 'Faturalandırma',
-					to: '/'
+					to: '/bills'
 				},
 				{
 					icon: 'mdi-account-circle-outline',
 					title: 'Profil',
-					to: '/'
+					to: '/profile'
 				},
 				{
 					icon: 'mdi-swap-horizontal',
 					title: 'İşlemlerim',
-					to: '/'
+					to: '/my-exchances'
 				},
 				{
 					icon: 'mdi-shield-account-outline',
 					title: 'Güvenlik',
-					to: '/'
+					to: '/security'
 				},
 				{
 					icon: 'mdi-bell-outline',
 					title: 'Bildirimler',
-					to: '/'
+					to: '/notifications'
 				},
 			],
 			language: [

@@ -92,3 +92,4 @@ sw.*
 
 # Vercel
 .vercel
+/desktop.ini
